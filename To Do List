@@ -1,0 +1,22 @@
+# To create To Do list
+
+
+print("Press p to print list \n Press x to delete item")
+myList = []
+i = 0
+a = input("Title of your To Do List: ")
+print("Enter the items")
+while True:
+    b = input("\n")
+    if b.lower() == "p":
+        print("\n"+ a + "\n")
+        print("\n".join(myList))
+       
+    elif b.lower() == "x":
+        i = input("Enter the item delete: ")
+        myList.remove(i)
+        myList.remove("p")
+        print("\n".join(myList))
+        break
+    myList.append(b)
+
